@@ -5,7 +5,7 @@ from storage import TaskStorage
 
 
 class TaskManager:
-    """Manages task operations."""
+    """ Manages task operations."""
 
     PRIORITY_ORDER = {
         "High": 1,
