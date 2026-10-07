@@ -372,13 +372,11 @@ with st.sidebar:
         unsafe_allow_html=True
     )
 
-    st.caption(
-        "Smart Task Management"
-    )
+    st.caption("Smart Task Management")
 
     st.divider()
 
-    st.markdown("### WORKSPACE")
+    st.markdown("### NAVIGATION")
 
     menu = st.radio(
         "Navigation",
@@ -387,16 +385,7 @@ with st.sidebar:
             "Add Task",
             "All Tasks",
             "Pending Tasks",
-            "Completed Tasks"
-        ],
-        label_visibility="collapsed"
-    )
-
-    st.markdown("### TOOLS")
-
-    tool_menu = st.radio(
-        "Tools",
-        [
+            "Completed Tasks",
             "Search Tasks",
             "Filter by Priority",
             "Statistics"
@@ -406,13 +395,8 @@ with st.sidebar:
 
     st.divider()
 
-    st.caption(
-        "TaskFlow v1.0"
-    )
-
-    st.caption(
-        "Python • Streamlit"
-    )
+    st.caption("TaskFlow v1.0")
+    st.caption("Python • Streamlit")
 
 
 # =========================================================
@@ -754,7 +738,7 @@ elif menu == "Completed Tasks":
 # SEARCH
 # =========================================================
 
-elif tool_menu == "Search Tasks":
+elif menu == "Search Tasks":
 
     st.header("Search Tasks")
 
@@ -786,7 +770,7 @@ elif tool_menu == "Search Tasks":
 # FILTER
 # =========================================================
 
-elif tool_menu == "Filter by Priority":
+elif menu == "Filter by Priority":
 
     st.header("Filter Tasks")
 
@@ -815,8 +799,8 @@ elif tool_menu == "Filter by Priority":
 # STATISTICS
 # =========================================================
 
-elif tool_menu == "Statistics":
-
+elif menu == "Statistics":
+    
     st.header("Task Analytics")
 
     st.caption(
