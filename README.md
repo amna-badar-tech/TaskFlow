@@ -72,7 +72,3 @@ streamlit run streamlit_app.py
 - Automated testing
 
 ---
-
-**Developed by Amna Badar**
-
-*Built as a Python Development learning project.*****
